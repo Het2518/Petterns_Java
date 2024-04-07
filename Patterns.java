@@ -20,6 +20,20 @@ public class Patterns {
         pattern9(5);
         System.out.println();
         pattern10(5);
+        System.out.println();
+        pattern11(5);
+        System.out.println();
+        pattern12(5);
+        System.out.println();
+        pattern13(5);
+        System.out.println();
+        pattern14(5);
+        System.out.println();
+        pattern15(5);
+        System.out.println();
+        pattern16(5);
+        System.out.println();
+        pattern17(5);
     }
 
     static void pattern1(int n) {
@@ -140,10 +154,98 @@ public class Patterns {
 
     static void pattern11(int n) {
         for (int raw = 0; raw < n; raw++) {
-            for (int col = n; col > 0; col--) {
+            for (int col = n; col > raw; col--) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern12(int n) {
+        for (int raw = 0; raw < n; raw++) {
+            for (int space = 0; space < n - raw; space++) {
+                System.out.print(" ");
+            }
+            for (int col = 0; col <= raw; col++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern13(int n) {
+        for (int raw = 0; raw < n; raw++) {
+            for (int space = 0; space < n - raw; space++) {
+                System.out.print(" ");
+            }
+            for (int col = 0; col <= raw; col++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern14(int n) {
+        for (int raw = n; raw >= 1; raw--) {
+            for (int space = 0; space < n - raw; space++) {
+                System.out.print(" ");
+            }
+            for (int col = 1; col <= raw; col++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
+
+    static void pattern15(int n) {
+        for (int row = n; row >= 1; row--) {
+            for (int space = 0; space < n - row; space++) {
+                System.out.print(" ");
+            }
+
+            for (int col = row; col >= 1; col--) {
+                System.out.print("*");
+            }
+            for (int col = 2; col <= row; col++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern16(int n) {
+        for (int raw = n; raw >= 1; raw--) {
+            for (int space = 1; space <= n - raw; space++) {
+                System.out.print(" ");
+            }
+            for (int col = 1; col <= raw; col++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern17(int n) {
+        for (int raw = n; raw >= 1; raw--) {
+            for (int space = 0; space <= n - raw; space++) {
+                System.out.print(" ");
+            }
+            for (int col = 1; col <= raw; col++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        for (int raw = 0; raw < n; raw++) {
+            for (int space = 0; space < n - raw; space++) {
+                System.out.print(" ");
+            }
+            for (int col = 0; col <= raw; col++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
     }
 }
+
