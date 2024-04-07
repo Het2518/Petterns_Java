@@ -137,4 +137,13 @@ public class Patterns {
             System.out.println();
         }
     }
+
+    static void pattern11(int n) {
+        for (int raw = 0; raw < n; raw++) {
+            for (int col = n; col > 0; col--) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
 }
