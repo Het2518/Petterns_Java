@@ -34,6 +34,9 @@ public class Patterns {
         pattern16(5);
         System.out.println();
         pattern17(5);
+        System.out.println();
+        pattern18(5);
+        System.out.println();
     }
 
     static void pattern1(int n) {
@@ -247,5 +250,17 @@ public class Patterns {
             System.out.println();
         }
     }
+
+    static void pattern18(int n) {
+        for (int raw = n; raw >=1; raw--) {
+
+            for (int col = raw; col >= 1; col--) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+
 }
 
